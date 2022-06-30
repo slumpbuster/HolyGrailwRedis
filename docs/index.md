@@ -1,37 +1,54 @@
-## Welcome to GitHub Pages
+# Holy Grail with Redis
+<img src="./HolyGrail.PNG" height="400px" width="400px"/> 
 
-You can use the [editor on GitHub](https://github.com/slumpbuster/HolyGrailwRedis/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+## Description 
+This is an example of the clasic Holy Grail Web Design/Application using react to Update state and Redis as the database.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Purpose 
+This was done as an assignment in the MIT course - Full Stack Development with Mern
 
-### Markdown
+---------
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Technologies Used 
+- HTML
+- CSS
+- Javascript
 
-```markdown
-Syntax highlighted code block
+---------
 
-# Header 1
-## Header 2
-### Header 3
+## Installation 
+- Clone this repository to your local machine
+- Install Docker if not already installed https://docs.docker.com/desktop/
+- Open a command line on your computer and run the command cd path-to-project-root (this should be the actual directory where the repository is located on your local machine)
+- Within the same command-line window, run npm install
+- Once the command completes successfully, run docker run -p 6379:6379 --name some-redis -d redis
+- Once the command completes successfully, run nodemon index.js
+- Open your browser of choice and browse to http://localhost:3000/
 
-- Bulleted
-- List
+## How to Run 
+- When the page is loaded in your browser, you will notice all entries are set to count 0
+- To increase/decrease the count of a section, click on the + or - button in that section
+- That sections count will increase in all sections
 
-1. Numbered
-2. List
+---------
 
-**Bold** and _Italic_ and `Code` text
+## Files 
+  - **/public/icons/.png** - Various + and - buttons used in application
+  - **/public/article.js** - Article section of the application
+  - **/public/footer.js** - Footer section of the application
+  - **/public/header.js** - Header section of the application
+  - **/public/index_no_db.js** - No Redis Database React code
+  - **/public/index.js** - Redis Database React code
+  - **/public/index.html** - Html page that contains the call to initialize React/Babel/SuperAgent
+  - **/public/left.js** - Left section of the application
+  - **/public/right.js** - Right section of the application
+  - **/public/section.css** - Stylesheet file that positions objects, controls text, colors, and layo
+  - **/src/index.js** - Contains the API calls and starts the HTTP Server
 
-[Link](url) and ![Image](src)
-```
+---------
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Contributing 
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/slumpbuster/HolyGrailwRedis/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## License
+[The MIT License (MIT)](https://github.com/slumpbuster/HolyGrailwRedis/blob/main/LICENSE)
